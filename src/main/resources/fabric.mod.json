@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod-2",
+	"version": "${version}",
+	"name": "Tutorial Mod 2",
+	"description": "Tutorial Mod 1 used a bad version so I had to make a 2nd one lol",
+	"authors": [
+		"Siege"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorial-mod-2/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.siege.tutorialmod2.TutorialMod2"
+		],
+		"fabric-datagen": [
+			"net.siege.tutorialmod2.TutorialMod2DataGenerator"
+		],
+		"client": [
+			"net.siege.tutorialmod2.TutorialMod2Client"
+		]
+	},
+	"mixins": [
+		"tutorial-mod-2.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
